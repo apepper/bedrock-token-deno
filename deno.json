@@ -1,0 +1,16 @@
+{
+  "tasks": {
+    "token": "deno run --allow-env --allow-read --allow-net --allow-sys src/main.ts token",
+    "converse": "deno run --allow-env --allow-read --allow-net --allow-sys src/main.ts converse",
+    "fmt": "deno fmt",
+    "lint": "deno lint",
+    "check": "deno check src/main.ts",
+    "compile": "deno compile --allow-env --allow-read --allow-net --allow-sys -o bedrock-token src/main.ts"
+  },
+  "imports": {
+    "@aws/bedrock-token-generator": "npm:@aws/bedrock-token-generator@^1.1.0"
+  },
+  "fmt": {
+    "lineWidth": 100
+  }
+}
